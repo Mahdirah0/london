@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header h1 {
+  font-size: 1.7rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.navigator {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+  margin: 0 3px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links li:hover {
+  background-color: rgb(194, 161, 161, 0.3);
+  border-radius: 3px;
+}
+
+/*  header style ended */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.hero h1 {
+  font-size: 8rem;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.image-hero {
+  height: 900px;
+  width: 1280px;
+  z-index: 3;
+}
+
+.image-hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.line {
+  background-color: rgb(216, 203, 203, 0.2);
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: -18%;
+}
+
+.contact-email {
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  transform: rotate(270deg);
+}
+
+.list-hero {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: rotate(90deg);
+  display: flex;
+}
+
+.list-hero li {
+  margin-left: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+/*  cards styling */
+
+.cards {
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 40vh;
+  margin-bottom: 100px;
+}
+
+.card-holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.card-item {
+  width: 25%;
+  margin-top: 15rem;
+}
+
+.card-item h2 {
+  font-family: 'Advent Pro', sans-serif;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.card-item p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+}
+
+.line-two {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: rgb(129, 127, 127);
+  top: 9.5%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* experience starting */
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-container h1 {
+  margin-bottom: 3rem;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3rem;
+}
+
+.experience-text {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.experience-text div {
+  width: 20%;
+}
+
+.second-text-experience {
+  margin-left: 50px;
+}
+
+/* image center */
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.image-center img {
+  height: 700px;
+  width: 700px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  font-size: 30rem;
+  opacity: 0.2;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*  explore container */
+
+.explore {
+  display: flex;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+
+.explore-text h1 {
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  width: 40%;
+}
+
+.explore-para {
+  width: 40%;
+}
+
+.explore-para p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* visit content */
+
+.visit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+}
+
+.navigator-visit {
+  margin-left: 100px;
+}
+
+.nav-links-visit {
+  list-style: none;
+}
+
+.nav-links-visit li {
+  border-bottom: 1px solid rgb(110, 109, 109);
+  padding: 10px 0;
+  padding-bottom: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-links-visit li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links-visit li i {
+  margin-right: 10px;
+}
+
+.image-visit {
+  height: 400px;
+  width: 300px;
+}
+
+.image-visit img {
+  height: 100%;
+  width: 100%;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+  color: white;
+}
+
+.price {
+  display: flex;
+}
+
+.price div {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgb(110, 109, 109);
+}
+
+.days h2 {
+  font-size: 1.5rem;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.money span {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*  button */
+
+.button {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button button {
+  outline: none;
+  padding: 10px 50px;
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgb(68, 68, 68);
+  font-weight: bold;
+}
+
+.button button a {
+  text-decoration: none;
+  color: black;
+}
+
+.line-three {
+  height: 1170px;
+  width: 100px;
+  background-color: rgb(44, 42, 42);
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+  opacity: 0.1;
+}
+
+.line-four {
+  height: 1170px;
+  width: 100px;
+  background-color: rgb(44, 42, 42);
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
+  opacity: 0.1;
+}
+
+.container {
+  background-color: rgb(17, 16, 16);
+  min-height: 10vh;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+}
+
+@media screen and (max-width: 1600px) {
+  .contact-email {
+    display: none;
+  }
+  .list-hero {
+    display: none;
+  }
+  .image-hero {
+    width: 80%;
+  }
+  .image-hero img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .watermark {
+    font-size: 25rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .explore div {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+  }
+  .explore-text h1 {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .explore-para {
+    width: 60%;
+  }
+  .explore-para p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .experience-text div p {
+    font-size: 1rem;
+  }
+  .line-two {
+    position: absolute;
+    top: 9%;
+  }
+
+  .watermark {
+    font-size: 20rem;
+  }
+  .image-visit img {
+    z-index: 3;
+  }
+  .line-three {
+    height: 900px;
+  }
+  .line-four {
+    height: 980px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .experience-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience-text div {
+    width: 80%;
+  }
+  .experience-text div p {
+    line-height: 1.4;
+    text-align: center;
+  }
+  .first-text-experience p {
+    line-height: 1.6;
+  }
+  .second-text-experience {
+    margin: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .line-two {
+    height: 140px;
+    top: 8%;
+  }
+  .explore-para {
+    line-height: 1.5;
+    width: 80%;
+  }
+  .watermark {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .line-three {
+    display: none;
+    pointer-events: none;
+  }
+  .line-four {
+    display: none;
+    pointer-events: none;
+  }
+  .visit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-visit {
+    margin-top: 50px;
+  }
+  .navigator-visit {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .hero h1 {
+    font-size: 6rem;
+  }
+  .watermark {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    margin-bottom: 10px;
+  }
+  .explore-para {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .experience-container {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .card-holder {
+    display: flex;
+    flex-direction: column;
+  }
+  .line-two {
+    pointer-events: none;
+    display: none;
+  }
+  .cards {
+    margin-bottom: 3rem;
+  }
+  .card-item {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 80%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .card-one {
+    margin-top: 5rem;
+  }
+  .line {
+    display: none;
+    pointer-events: none;
+  }
+  .line-two {
+    display: none;
+    pointer-events: none;
+  }
+  .image-hero {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .cost div {
+    width: 80%;
+  }
+  .days h2 {
+    font-size: 1.3rem;
+  }
+  .watermark {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  pointer-events: none;
+}
+
+.burger div {
+  height: 4px;
+  width: 20px;
+  background-color: black;
+  margin: 3px;
+}
+
+.slide-show {
+  background-color: rgba(33, 35, 36, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  transform: translate(1900px);
+  opacity: 0;
+  transition: all 1s ease;
+  color: white;
+}
+
+.button-cross {
+  text-align: end;
+}
+
+.button-cross button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 60px;
+  margin-top: 50px;
+  color: white;
+}
+
+.active-slide {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.nav-links-slide {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.nav-links-slide li {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.nav-links-slide li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 460px) {
+  .experience-container h1 {
+    font-size: 2rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    margin: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: block;
+    pointer-events: all;
+  }
+}
